@@ -1,0 +1,9 @@
+/* form.form-reggister {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+} */
+form {
+  width: 50%;
+}

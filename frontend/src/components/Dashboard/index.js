@@ -1,12 +1,12 @@
-// import React from 'react';
-// // import { Link,Router, useHistory } from 'react-router-dom';
+import React from 'react';
+// import { Link,Router, useHistory } from 'react-router-dom';
 
-// const Dashboard = () => {
-// 	return(
-// 		<>
-// 		<div>Dashboard</div>
-// 		</>
-// 	)
-// };
+const Dashboard = () => {
+	return(
+		<>
+		<div>Dashboard</div>
+		</>
+	)
+};
 
-// export default Dashboard;
+export default Dashboard;

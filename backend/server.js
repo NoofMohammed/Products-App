@@ -1,39 +1,36 @@
-const express = require('express');
-const db = require('./db/db');
-require('dotenv').config();
+const express = require("express");
+const cors = require("cors");
+const db = require("./db/db");
+require("dotenv").config();
 
 //routers
 
 const app = express();
-const  userRouter = require("./routers/routes/users")
-const roleRouter = require("./routers/routes/role")
-const productRouter = require("./routers/routes/product")
-const basketRouter = require("./routers/routes/basket")
-const commentRouter = require("./routers/routes/comments")
-const loginRouter = require("./routers/routes/login")
-const ratingRouter = require("./routers/routes/rating")
+const userRouter = require("./routers/routes/users");
+const roleRouter = require("./routers/routes/role");
+const productRouter = require("./routers/routes/product");
+const basketRouter = require("./routers/routes/basket");
+const commentRouter = require("./routers/routes/comments");
+const loginRouter = require("./routers/routes/login");
+const ratingRouter = require("./routers/routes/rating");
 //built-in middlewares
 app.use(express.json());
-app.use("/user",userRouter) 
-app.use("/role",roleRouter)
-app.use("/product",productRouter)
-app.use("/basket",basketRouter)
-app.use("/comment",commentRouter)
-app.use("/login",loginRouter)
-app.use("/rating",ratingRouter)
+app.use(cors());
 
+app.use("/user", userRouter);
+app.use("/role", roleRouter);
+app.use("/product", productRouter);
+app.use("/basket", basketRouter);
+app.use("/comment", commentRouter);
+app.use("/login", loginRouter);
+app.use("/rating", ratingRouter);
 
 // router middleware
 
-
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-	console.log(`server on ${PORT}`);
+  console.log(`server on ${PORT}`);
 });
-
-
-
-
 
 // const roleRouter = require("./routers/routes/role");
 // const sliderRouter = require("./routers/routes/slider");
