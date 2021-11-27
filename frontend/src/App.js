@@ -7,7 +7,7 @@ import Dashboard from "./components/Dashboard";
 import Home from "./components/Home";
 import About from "./components/About";
 import Product from "./components/product";
-import Carousel from "react-bootstrap/Carousel";
+// import Carousel from "react-bootstrap/Carousel";
 
 const App = () => {
   return (

@@ -96,47 +96,6 @@ const Register = () => {
           </button>
         </form>
       </div>
-      {/* <div className="form-reggister">
-        <input
-          type="text"
-          placeholder="FirstName"
-          onChange={(e) => {
-            setFirstName(e.target.value);
-          }}
-        />
-        <input
-          type="text"
-          placeholder="LastName"
-          onChange={(e) => {
-            setLastName(e.target.value);
-          }}
-        /> */}
-      {/* <input
-          type="text"
-          placeholder="Address"
-          onChange={(e) => {
-            setAddress(e.target.value);
-          }}
-        />
-        <input
-          type="text"
-          placeholder="Email"
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-        />
-        <input
-          type="text"
-          placeholder="Password"
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }}
-        />
-
-        <Button variant="primary" type="submit" onClick={register}>
-          Submit
-        </Button>
-      </div> */}
     </>
   );
 };
